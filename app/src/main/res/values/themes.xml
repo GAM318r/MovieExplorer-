@@ -1,9 +1,13 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.MovieExplorer" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.MovieExplorer" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/movie_gold</item>
+        <item name="colorOnPrimary">#111827</item>
+        <item name="colorSecondary">@color/movie_button</item>
+        <item name="android:colorAccent">@color/movie_gold</item>
+        <item name="android:statusBarColor">@color/movie_background</item>
+        <item name="android:navigationBarColor">@color/movie_background</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowBackground">@color/movie_background</item>
     </style>
-
-    <style name="Theme.MovieExplorer" parent="Base.Theme.MovieExplorer" />
 </resources>

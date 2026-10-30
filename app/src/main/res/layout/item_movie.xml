@@ -4,8 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="12dp"
-    app:cardBackgroundColor="#252525"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="@color/movie_card"
     app:cardCornerRadius="12dp"
     app:cardElevation="4dp">
 
@@ -17,8 +17,8 @@
 
         <ImageView
             android:id="@+id/moviePoster"
-            android:layout_width="110dp"
-            android:layout_height="165dp"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
             android:contentDescription="Movie poster"
             android:scaleType="centerCrop"
             android:src="@android:drawable/ic_menu_gallery" />
@@ -26,18 +26,16 @@
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_marginStart="12dp"
+            android:layout_weight="1"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/movieTitle"
+                style="@style/MovieTitleStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Movie Title"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                android:text="Movie Title" />
 
             <TextView
                 android:id="@+id/movieReleaseDate"
@@ -45,32 +43,31 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="6dp"
                 android:text="Release date"
-                android:textColor="#CCCCCC"
-                android:textSize="13sp" />
+                android:textColor="@color/movie_secondary_text"
+                android:textSize="14sp" />
 
             <TextView
                 android:id="@+id/movieRating"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="6dp"
-                android:text="Rating: 8.0/10"
-                android:textColor="#FFD54F"
-                android:textSize="14sp"
-                android:textStyle="bold" />
+                android:text="Rating"
+                android:textColor="@color/movie_gold"
+                android:textSize="14sp" />
 
             <TextView
                 android:id="@+id/movieOverview"
+                style="@style/MovieDetailsStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Movie description appears here."
-                android:textColor="#EEEEEE"
-                android:textSize="13sp"
                 android:maxLines="5"
-                android:ellipsize="end" />
+                android:ellipsize="end"
+                android:text="Movie overview" />
 
         </LinearLayout>
 
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>
+
